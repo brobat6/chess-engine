@@ -9,7 +9,7 @@ public interface ChessBoard {
 
     List<Piece> getPieces(Color color, PieceType pieceType);
 
-    Piece getPiece(int row, char col);
+    Piece getPiece(int row, int col);
 
     default Piece getKing(Color color) {
         return getPieces(color, PieceType.KING).getFirst();
